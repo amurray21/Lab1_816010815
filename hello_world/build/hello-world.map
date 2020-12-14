@@ -18240,71 +18240,71 @@ END GROUP
                 0x40105424                g_misc_nvs
                 0x40105428                g_log_mod
                 0x4010542c                g_log_level
- *libfreertos.a:timers.*(.bss .bss.* COMMON)
- .bss.xLastTime$4351
-                0x40105430        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
- .bss.xTimerTaskHandle
-                0x40105434        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
- .bss.xTimerQueue
-                0x40105438        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
- .bss.pxOverflowTimerList
-                0x4010543c        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
- .bss.pxCurrentTimerList
-                0x40105440        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
- .bss.xActiveTimerList2
-                0x40105444       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
- .bss.xActiveTimerList1
-                0x40105458       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
+ *libfreertos.a:impure.*(.bss .bss.* COMMON)
+ *libfreertos.a:freertos_hooks.*(.bss .bss.* COMMON)
  *libfreertos.a:event_groups.*(.bss .bss.* COMMON)
  *libfreertos.a:list.*(.bss .bss.* COMMON)
- *libfreertos.a:queue.*(.bss .bss.* COMMON)
- *libfreertos.a:freertos_hooks.*(.bss .bss.* COMMON)
- *libfreertos.a:impure.*(.bss .bss.* COMMON)
  *libfreertos.a:stream_buffer.*(.bss .bss.* COMMON)
+ *libfreertos.a:queue.*(.bss .bss.* COMMON)
  *libfreertos.a:tasks.*(.bss .bss.* COMMON)
  .bss.uxSchedulerSuspended
-                0x4010546c        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105430        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.xIdleTaskHandle
-                0x40105470        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105434        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.xNextTaskUnblockTime
-                0x40105474        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105438        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.uxTaskNumber
-                0x40105478        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x4010543c        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.xNumOfOverflows
-                0x4010547c        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105440        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.xYieldPending
-                0x40105480        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105444        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.uxPendedTicks
-                0x40105484        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105448        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.xSchedulerRunning
-                0x40105488        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x4010544c        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.uxTopReadyPriority
-                0x4010548c        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105450        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.xTickCount
-                0x40105490        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105454        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.uxCurrentNumberOfTasks
-                0x40105494        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105458        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.xSuspendedTaskList
-                0x40105498       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x4010545c       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.uxDeletedTasksWaitingCleanUp
-                0x401054ac        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105470        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.xTasksWaitingTermination
-                0x401054b0       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105474       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.xPendingReadyList
-                0x401054c4       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105488       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.pxOverflowDelayedTaskList
-                0x401054d8        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x4010549c        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.pxDelayedTaskList
-                0x401054dc        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x401054a0        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.xDelayedTaskList2
-                0x401054e0       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x401054a4       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.xDelayedTaskList1
-                0x401054f4       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x401054b8       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.pxReadyTasksLists
-                0x40105508      0x12c C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x401054cc      0x12c C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
  .bss.pxCurrentTCB
-                0x40105634        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
-                0x40105634                pxCurrentTCB
+                0x401055f8        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x401055f8                pxCurrentTCB
+ *libfreertos.a:timers.*(.bss .bss.* COMMON)
+ .bss.xLastTime$4351
+                0x401055fc        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
+ .bss.xTimerTaskHandle
+                0x40105600        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
+ .bss.xTimerQueue
+                0x40105604        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
+ .bss.pxOverflowTimerList
+                0x40105608        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
+ .bss.pxCurrentTimerList
+                0x4010560c        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
+ .bss.xActiveTimerList2
+                0x40105610       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
+ .bss.xActiveTimerList1
+                0x40105624       0x14 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
  *liblwip.a:(.bss .bss.* COMMON)
                 0x40105638                . = ALIGN (0x4)
                 0x40105638                _iram_bss_end = ABSOLUTE (.)
@@ -18434,7 +18434,7 @@ END GROUP
 .dram0.bss      0x3ffe8560     0x1928
                 0x3ffe8560                . = ALIGN (0x8)
                 0x3ffe8560                _bss_start = ABSOLUTE (.)
- *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:freertos_hooks.* *libfreertos.a:impure.* *libfreertos.a:stream_buffer.* *libfreertos.a:tasks.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:freertos_hooks.* *libfreertos.a:impure.* *libfreertos.a:stream_buffer.* *libfreertos.a:tasks.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:freertos_hooks.* *libfreertos.a:impure.* *libfreertos.a:stream_buffer.* *libfreertos.a:tasks.* *libcore.a) COMMON)
+ *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libfreertos.a:queue.* *libfreertos.a:tasks.* *libfreertos.a:timers.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libfreertos.a:queue.* *libfreertos.a:tasks.* *libfreertos.a:timers.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libfreertos.a:queue.* *libfreertos.a:tasks.* *libfreertos.a:timers.* *libcore.a) COMMON)
  .bss.s_nmi_wd_state
                 0x3ffe8560        0x4 C:/esp/Lab1_816010815/hello_world/build/esp8266\libesp8266.a(task_wdt.o)
  .bss.s_reset_reason
