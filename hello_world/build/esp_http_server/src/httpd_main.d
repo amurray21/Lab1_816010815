@@ -76,6 +76,7 @@ src/httpd_main.o: \
  C:/esp/ESP8266_RTOS_SDK/components/http_parser/include/http_parser.h \
  C:/esp/ESP8266_RTOS_SDK/components/esp_http_server/src/esp_httpd_priv.h \
  C:/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/netinet/in.h \
+ C:/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/arpa/inet.h \
  C:/esp/ESP8266_RTOS_SDK/components/esp_http_server/src/port/esp8266/osal.h \
  C:/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_timer.h \
  C:/esp/ESP8266_RTOS_SDK/components/esp_http_server/src/util/ctrl_sock.h
@@ -231,6 +232,8 @@ C:/esp/ESP8266_RTOS_SDK/components/http_parser/include/http_parser.h:
 C:/esp/ESP8266_RTOS_SDK/components/esp_http_server/src/esp_httpd_priv.h:
 
 C:/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/netinet/in.h:
+
+C:/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/arpa/inet.h:
 
 C:/esp/ESP8266_RTOS_SDK/components/esp_http_server/src/port/esp8266/osal.h:
 

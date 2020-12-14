@@ -28,6 +28,8 @@ driver/adc.o: C:/esp/ESP8266_RTOS_SDK/components/esp8266/driver/adc.c \
  C:/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h \
  C:/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  C:/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h \
+ C:/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
+ C:/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h \
  C:/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/semphr.h \
  C:/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
  C:/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
@@ -92,6 +94,10 @@ C:/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h:
 C:/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h:
 
 C:/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h:
+
+C:/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
+
+C:/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h:
 
 C:/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/semphr.h:
 

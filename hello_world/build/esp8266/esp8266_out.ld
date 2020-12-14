@@ -1,17 +1,31 @@
 /* ESP8266 Linker Script Memory Layout
 
+
+
    This file describes the memory layout (memory blocks).
 
+
+
    esp8266.project.ld contains output sections to link compiler output
+
    into these memory blocks.
+
+
 
    ***
 
+
+
    This linker script is passed through the C preprocessor to include
+
    configuration options.
 
+
+
    Please use preprocessor features sparingly! Restrict
+
    to simple macros with numeric values, and/or #if/#endif blocks.
+
 */
 /*
 
@@ -25,6 +39,7 @@
 MEMORY
 {
   /* All these values assume the flash cache is on, and have the blocks this uses subtracted from the length
+
   of the various regions. */
   /* IRAM for cpu. The length is due to the cache mode which is able to be set half or full mode. */
   iram0_0_seg (RX) : org = 0x40100000, len = 0xC000
@@ -32,8 +47,11 @@ MEMORY
   iram0_2_seg (RX) : org = 0x40200010 + (0x10000 & (0x100000 - 1)),
                                      len = 0xf0000 - 0x10
   /*
+
     (0x18 offset above is a convenience for the app binary image generation. The .bin file which is flashed
+
     to the chip has a 0x10 byte file header. Setting this offset makes it simple to meet the flash cache.)
+
   */
   /* Length of this section is 96KB */
   dram0_0_seg (RW) : org = 0x3FFE8000, len = 0x18000

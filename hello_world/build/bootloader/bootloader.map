@@ -218,7 +218,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x30 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(esp_fast_boot.o)
  .debug_ranges  0x00000000       0x20 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(esp_fast_boot.o)
- .debug_line    0x00000000      0x536 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(esp_fast_boot.o)
+ .debug_line    0x00000000      0x539 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(esp_fast_boot.o)
  .debug_str     0x00000000      0x701 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(esp_fast_boot.o)
  .comment       0x00000000       0x32 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(esp_fast_boot.o)
  .xt.lit        0x00000000       0x18 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(esp_fast_boot.o)
@@ -249,8 +249,8 @@ LOAD C:/esp/Lab1_816010815/hello_world/build/bootloader/spi_flash\libspi_flash.a
 LOAD C:/esp/Lab1_816010815/hello_world/build/bootloader/log\liblog.a
 LOAD C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a
 LOAD C:/esp/ESP8266_RTOS_SDK/components/esp8266/lib\libgcc.a
-LOAD c:/users/akim/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a
-LOAD c:/users/akim/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0\libgcov.a
+LOAD c:/users/murra/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a
+LOAD c:/users/murra/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0\libgcov.a
 END GROUP
 
 .text           0x40100000     0x1b75
@@ -753,7 +753,7 @@ END GROUP
  *(.jcr)
                 0x3ffe8420                _data_end = ABSOLUTE (.)
 
-.rodata         0x3ffe8420      0xd00
+.rodata         0x3ffe8420      0xd08
                 0x3ffe8420                _rodata_start = ABSOLUTE (.)
  *(.rodata)
  *(.rodata.*)
@@ -766,94 +766,94 @@ END GROUP
  .rodata.print_flash_info
                 0x3ffe84cc       0x28 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
  .rodata.bootloader_main.str1.4
-                0x3ffe84f4       0x72 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- *fill*         0x3ffe8566        0x2 
+                0x3ffe84f4       0x7a C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ *fill*         0x3ffe856e        0x2 
  .rodata.log_invalid_app_partition.str1.4
-                0x3ffe8568       0x68 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x3ffe8570       0x68 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                  0x70 (size before relaxing)
  .rodata.try_load_partition.str1.4
-                0x3ffe85d0       0x29 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- *fill*         0x3ffe85f9        0x3 
+                0x3ffe85d8       0x29 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ *fill*         0x3ffe8601        0x3 
  .rodata.bootloader_utility_load_partition_table.str1.4
-                0x3ffe85fc      0x137 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- *fill*         0x3ffe8733        0x1 
+                0x3ffe8604      0x137 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ *fill*         0x3ffe873b        0x1 
  .rodata.bootloader_utility_get_selected_boot_partition.str1.4
-                0x3ffe8734       0xef C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- *fill*         0x3ffe8823        0x1 
+                0x3ffe873c       0xef C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ *fill*         0x3ffe882b        0x1 
  .rodata.bootloader_utility_load_boot_image.str1.4
-                0x3ffe8824       0x9a C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- *fill*         0x3ffe88be        0x2 
+                0x3ffe882c       0x9a C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ *fill*         0x3ffe88c6        0x2 
  .rodata.verify_image_header.str1.4
-                0x3ffe88c0       0x82 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- *fill*         0x3ffe8942        0x2 
+                0x3ffe88c8       0x82 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ *fill*         0x3ffe894a        0x2 
  .rodata.process_segment_data.str1.4
-                0x3ffe8944       0x27 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- *fill*         0x3ffe896b        0x1 
+                0x3ffe894c       0x27 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ *fill*         0x3ffe8973        0x1 
  .rodata.verify_checksum.str1.4
-                0x3ffe896c       0x57 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- *fill*         0x3ffe89c3        0x1 
+                0x3ffe8974       0x57 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ *fill*         0x3ffe89cb        0x1 
  .rodata.process_segment.str1.4
-                0x3ffe89c4       0x8f C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x3ffe89cc       0x8f C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                  0x93 (size before relaxing)
- *fill*         0x3ffe8a53        0x1 
+ *fill*         0x3ffe8a5b        0x1 
  .rodata.esp_image_load.str1.4
-                0x3ffe8a54       0xaf C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- *fill*         0x3ffe8b03        0x1 
+                0x3ffe8a5c       0xaf C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ *fill*         0x3ffe8b0b        0x1 
  .rodata.esp_partition_table_basic_verify.str1.4
-                0x3ffe8b04       0xb4 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+                0x3ffe8b0c       0xb4 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
  .rodata.bootloader_mmap.str1.4
-                0x3ffe8bb8       0x57 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- *fill*         0x3ffe8c0f        0x1 
+                0x3ffe8bc0       0x57 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x3ffe8c17        0x1 
  .rodata.bootloader_flash_read.str1.4
-                0x3ffe8c10       0x9f C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- *fill*         0x3ffe8caf        0x1 
+                0x3ffe8c18       0x9f C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x3ffe8cb7        0x1 
  .rodata.esp_spi_flash_init.str1.4
-                0x3ffe8cb0       0x29 C:/esp/Lab1_816010815/hello_world/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- *fill*         0x3ffe8cd9        0x3 
+                0x3ffe8cb8       0x29 C:/esp/Lab1_816010815/hello_world/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ *fill*         0x3ffe8ce1        0x3 
  .rodata.str1.4
-                0x3ffe8cdc       0x24 C:/esp/Lab1_816010815/hello_world/build/bootloader/log\liblog.a(log.o)
+                0x3ffe8ce4       0x24 C:/esp/Lab1_816010815/hello_world/build/bootloader/log\liblog.a(log.o)
                                  0x22 (size before relaxing)
  .rodata.s_log_prefix
-                0x3ffe8d00        0x6 C:/esp/Lab1_816010815/hello_world/build/bootloader/log\liblog.a(log.o)
- *fill*         0x3ffe8d06        0x2 
+                0x3ffe8d08        0x6 C:/esp/Lab1_816010815/hello_world/build/bootloader/log\liblog.a(log.o)
+ *fill*         0x3ffe8d0e        0x2 
  .rodata.s_log_color
-                0x3ffe8d08       0x18 C:/esp/Lab1_816010815/hello_world/build/bootloader/log\liblog.a(log.o)
+                0x3ffe8d10       0x18 C:/esp/Lab1_816010815/hello_world/build/bootloader/log\liblog.a(log.o)
  .rodata.crc32_le_table
-                0x3ffe8d20      0x400 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(crc.o)
+                0x3ffe8d28      0x400 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(crc.o)
  *(.gnu.linkonce.r.*)
  *(.rodata1)
-                0x3ffe9120                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
+                0x3ffe9128                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
  *(.xt_except_table)
  *(.gcc_except_table)
  *(.gnu.linkonce.e.*)
  *(.gnu.version_r)
  *(.eh_frame)
-                0x3ffe9120                . = ((. + 0x3) & 0xfffffffc)
-                0x3ffe9120                __init_array_start = ABSOLUTE (.)
+                0x3ffe9128                . = ((. + 0x3) & 0xfffffffc)
+                0x3ffe9128                __init_array_start = ABSOLUTE (.)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
-                0x3ffe9120                __init_array_end = ABSOLUTE (.)
+                0x3ffe9128                __init_array_end = ABSOLUTE (.)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x3ffe9120                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
+                0x3ffe9128                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
  *(.xt_except_desc)
  *(.gnu.linkonce.h.*)
-                0x3ffe9120                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
+                0x3ffe9128                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
  *(.xt_except_desc_end)
  *(.dynamic)
  *(.gnu.version_d)
-                0x3ffe9120                _rodata_end = ABSOLUTE (.)
-                0x3ffe9120                _lit4_start = ABSOLUTE (.)
+                0x3ffe9128                _rodata_end = ABSOLUTE (.)
+                0x3ffe9128                _lit4_start = ABSOLUTE (.)
  *(*.lit4)
  *(.lit4.*)
  *(.gnu.linkonce.lit4.*)
-                0x3ffe9120                _lit4_end = ABSOLUTE (.)
-                0x3ffe9120                . = ALIGN (0x4)
-                0x3ffe9120                _heap_start = ABSOLUTE (.)
+                0x3ffe9128                _lit4_end = ABSOLUTE (.)
+                0x3ffe9128                . = ALIGN (0x4)
+                0x3ffe9128                _heap_start = ABSOLUTE (.)
                 0x60001100                PROVIDE (rtc_sys_info = 0x60001100)
                 0x400040c0                PROVIDE (SPI_sector_erase = 0x400040c0)
                 0x40004174                PROVIDE (SPI_page_program = 0x40004174)
@@ -1020,19 +1020,19 @@ OUTPUT(C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader.elf elf32-x
  .debug_ranges  0x000002d0       0x28 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
  .debug_ranges  0x000002f8       0x20 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(crc.o)
 
-.debug_line     0x00000000     0x80f8
- .debug_line    0x00000000      0x55a C:/esp/Lab1_816010815/hello_world/build/bootloader/main\libmain.a(bootloader_start.o)
- .debug_line    0x0000055a      0x7ab C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .debug_line    0x00000d05     0x136f C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .debug_line    0x00002074     0x1289 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .debug_line    0x000032fd      0x635 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .debug_line    0x00003932      0x60c C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .debug_line    0x00003f3e      0x895 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .debug_line    0x000047d3     0x1f1b C:/esp/Lab1_816010815/hello_world/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .debug_line    0x000066ee      0xc18 C:/esp/Lab1_816010815/hello_world/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .debug_line    0x00007306      0x597 C:/esp/Lab1_816010815/hello_world/build/bootloader/log\liblog.a(log.o)
- .debug_line    0x0000789d      0x498 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .debug_line    0x00007d35      0x3c3 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(crc.o)
+.debug_line     0x00000000     0x811c
+ .debug_line    0x00000000      0x55d C:/esp/Lab1_816010815/hello_world/build/bootloader/main\libmain.a(bootloader_start.o)
+ .debug_line    0x0000055d      0x7ae C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .debug_line    0x00000d0b     0x1372 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .debug_line    0x0000207d     0x128d C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .debug_line    0x0000330a      0x638 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .debug_line    0x00003942      0x60f C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .debug_line    0x00003f51      0x898 C:/esp/Lab1_816010815/hello_world/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .debug_line    0x000047e9     0x1f1e C:/esp/Lab1_816010815/hello_world/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .debug_line    0x00006707      0xc1b C:/esp/Lab1_816010815/hello_world/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .debug_line    0x00007322      0x59b C:/esp/Lab1_816010815/hello_world/build/bootloader/log\liblog.a(log.o)
+ .debug_line    0x000078bd      0x49c C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .debug_line    0x00007d59      0x3c3 C:/esp/Lab1_816010815/hello_world/build/bootloader/esp8266\libesp8266.a(crc.o)
 
 .debug_str      0x00000000     0x24de
  .debug_str     0x00000000      0x81e C:/esp/Lab1_816010815/hello_world/build/bootloader/main\libmain.a(bootloader_start.o)
