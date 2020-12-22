@@ -146,7 +146,7 @@ C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_init.o)
                               C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_caps.o) (g_heap_region)
 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
                               C:/esp/ESP8266_RTOS_SDK/components/esp8266/lib\libnet80211.a(ieee80211_hostap.o) (esp_log_early_timestamp)
-C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
                               C:/esp/Lab1_816010815/hello_world/build/esp8266\libesp8266.a(startup.o) (app_main)
 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
                               C:/esp/Lab1_816010815/hello_world/build/esp8266\libesp8266.a(phy_init.o) (calloc)
@@ -201,7 +201,7 @@ c:/users/murra/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xt
 c:/users/murra/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-putchar.o)
                               C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o) (putchar)
 c:/users/murra/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-puts.o)
-                              C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o) (puts)
+                              C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o) (puts)
 c:/users/murra/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-refill.o)
                               c:/users/murra/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fseeko.o) (__srefill_r)
 c:/users/murra/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-sprintf.o)
@@ -4565,11 +4565,11 @@ Discarded input sections
                 0x00000000       0x37 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
  .xt.lit        0x00000000       0x28 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
  .xt.prop       0x00000000      0x1f8 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
- .text          0x00000000        0x0 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
- .data          0x00000000        0x0 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
- .bss           0x00000000        0x0 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
- .xt.lit        0x00000000        0x8 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
- .xt.prop       0x00000000       0x54 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+ .text          0x00000000        0x0 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
+ .data          0x00000000        0x0 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
+ .bss           0x00000000        0x0 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
+ .xt.lit        0x00000000        0x8 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
+ .xt.prop       0x00000000       0x54 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
  .literal.zalloc
                 0x00000000        0x4 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
  .text          0x00000000        0x0 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
@@ -17637,7 +17637,7 @@ END GROUP
 
 .iram0.text     0x40100080     0x4eb7
                 0x40100080                _iram_text_start = ABSOLUTE (.)
- *(.iram1 .iram1.* EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .literal EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .text)
+ *(.iram1 .iram1.* EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .literal EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .text)
  .iram1.0.literal
                 0x40100080       0x1c C:/esp/Lab1_816010815/hello_world/build/esp8266\libesp8266.a(task_wdt.o)
  .iram1.1.literal
@@ -18241,11 +18241,7 @@ END GROUP
                 0x40105428                g_log_mod
                 0x4010542c                g_log_level
  *libfreertos.a:impure.*(.bss .bss.* COMMON)
- *libfreertos.a:freertos_hooks.*(.bss .bss.* COMMON)
- *libfreertos.a:event_groups.*(.bss .bss.* COMMON)
  *libfreertos.a:list.*(.bss .bss.* COMMON)
- *libfreertos.a:stream_buffer.*(.bss .bss.* COMMON)
- *libfreertos.a:queue.*(.bss .bss.* COMMON)
  *libfreertos.a:tasks.*(.bss .bss.* COMMON)
  .bss.uxSchedulerSuspended
                 0x40105430        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
@@ -18290,6 +18286,10 @@ END GROUP
  .bss.pxCurrentTCB
                 0x401055f8        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(tasks.o)
                 0x401055f8                pxCurrentTCB
+ *libfreertos.a:stream_buffer.*(.bss .bss.* COMMON)
+ *libfreertos.a:queue.*(.bss .bss.* COMMON)
+ *libfreertos.a:freertos_hooks.*(.bss .bss.* COMMON)
+ *libfreertos.a:event_groups.*(.bss .bss.* COMMON)
  *libfreertos.a:timers.*(.bss .bss.* COMMON)
  .bss.xLastTime$4351
                 0x401055fc        0x4 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
@@ -18434,7 +18434,7 @@ END GROUP
 .dram0.bss      0x3ffe8560     0x1928
                 0x3ffe8560                . = ALIGN (0x8)
                 0x3ffe8560                _bss_start = ABSOLUTE (.)
- *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libfreertos.a:queue.* *libfreertos.a:tasks.* *libfreertos.a:timers.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libfreertos.a:queue.* *libfreertos.a:tasks.* *libfreertos.a:timers.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libfreertos.a:queue.* *libfreertos.a:tasks.* *libfreertos.a:timers.* *libcore.a) COMMON)
+ *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libfreertos.a:queue.* *libfreertos.a:freertos_hooks.* *libfreertos.a:event_groups.* *libfreertos.a:timers.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libfreertos.a:queue.* *libfreertos.a:freertos_hooks.* *libfreertos.a:event_groups.* *libfreertos.a:timers.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libfreertos.a:queue.* *libfreertos.a:freertos_hooks.* *libfreertos.a:event_groups.* *libfreertos.a:timers.* *libcore.a) COMMON)
  .bss.s_nmi_wd_state
                 0x3ffe8560        0x4 C:/esp/Lab1_816010815/hello_world/build/esp8266\libesp8266.a(task_wdt.o)
  .bss.s_reset_reason
@@ -18777,7 +18777,7 @@ END GROUP
 .flash.text     0x40210010    0x1b15e
                 0x40210010                _stext = .
                 0x40210010                _text_start = ABSOLUTE (.)
- *(EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .literal EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .literal.* EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .text EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .text.* .wifi0iram .wifi0iram.*)
+ *(EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .literal EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .literal.* EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .text EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .text.* .wifi0iram .wifi0iram.*)
  .literal.user_init_entry
                 0x40210010       0x1c C:/esp/Lab1_816010815/hello_world/build/esp8266\libesp8266.a(startup.o)
                                  0x50 (size before relaxing)
@@ -19112,7 +19112,7 @@ END GROUP
                 0x40210290       0x20 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
                                  0x50 (size before relaxing)
  .literal.app_main
-                0x402102b0       0x20 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+                0x402102b0       0x20 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
                                  0x50 (size before relaxing)
  .literal.malloc
                 0x402102d0        0x0 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
@@ -20157,10 +20157,10 @@ END GROUP
  .literal.esp_event_post_to
                 0x402108a8        0xc C:/esp/Lab1_816010815/hello_world/build/esp_event\libesp_event.a(esp_event.o)
                                  0x40 (size before relaxing)
- .literal       0x402108b4       0x28 C:/esp/ESP8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2-fde.o)
-                                 0x7c (size before relaxing)
- .literal       0x402108dc       0x60 C:/esp/ESP8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2.o)
+ .literal       0x402108b4       0x60 C:/esp/ESP8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2.o)
                                 0x104 (size before relaxing)
+ .literal       0x40210914       0x28 C:/esp/ESP8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2-fde.o)
+                                 0x7c (size before relaxing)
  .text.user_init_entry
                 0x4021093c       0x7d C:/esp/Lab1_816010815/hello_world/build/esp8266\libesp8266.a(startup.o)
                                  0xa1 (size before relaxing)
@@ -21061,7 +21061,7 @@ END GROUP
                 0x40216b48                esp_log_write
  *fill*         0x40216c35        0x3 
  .text.app_main
-                0x40216c38       0x6c C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+                0x40216c38       0x6c C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
                                  0x8c (size before relaxing)
                 0x40216c38                app_main
  .text.malloc   0x40216ca4       0x18 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
@@ -23152,47 +23152,47 @@ END GROUP
  *fill*         0x40222328        0x0 
  *fill*         0x40222328        0x0 
  *fill*         0x40222328        0x0 
- *libgcc.a:unwind-dw2-fde.*(.literal .literal.* .text .text.*)
- .text          0x40222328      0xe71 C:/esp/ESP8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2-fde.o)
-                                0xe79 (size before relaxing)
-                0x40222f18                __register_frame_info_bases
-                0x40222f38                __register_frame_info
-                0x40222f5c                __register_frame
-                0x40222f98                __register_frame_info_table_bases
-                0x40222fb4                __register_frame_info_table
-                0x40222fd0                __register_frame_table
-                0x40223004                __deregister_frame_info_bases
-                0x40223094                __deregister_frame_info
-                0x402230a4                __deregister_frame
-                0x402230c0                _Unwind_Find_FDE
- *fill*         0x40223199        0x0 
  *libgcc.a:unwind-dw2.*(.literal .literal.* .text .text.*)
- *fill*         0x40223199        0x3 
- .text          0x4022319c     0x1e6b C:/esp/ESP8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2.o)
+ .text          0x40222328     0x1e6b C:/esp/ESP8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2.o)
                                0x1e87 (size before relaxing)
-                0x40224b48                _Unwind_GetGR
-                0x40224b88                _Unwind_GetCFA
-                0x40224b90                _Unwind_SetGR
-                0x40224be0                _Unwind_GetIP
-                0x40224be8                _Unwind_GetIPInfo
-                0x40224bf8                _Unwind_SetIP
-                0x40224c00                _Unwind_GetLanguageSpecificData
-                0x40224c08                _Unwind_GetRegionStart
-                0x40224c10                _Unwind_FindEnclosingFunction
-                0x40224c2c                _Unwind_GetDataRelBase
-                0x40224c34                _Unwind_GetTextRelBase
-                0x40224c3c                __frame_state_for
-                0x40224cf0                _Unwind_RaiseException
-                0x40224ddc                _Unwind_ForcedUnwind
-                0x40224e64                _Unwind_Resume
-                0x40224ef0                _Unwind_Resume_or_Rethrow
-                0x40224f7c                _Unwind_DeleteException
-                0x40224f94                _Unwind_Backtrace
- *fill*         0x40225007        0x0 
+                0x40223cd4                _Unwind_GetGR
+                0x40223d14                _Unwind_GetCFA
+                0x40223d1c                _Unwind_SetGR
+                0x40223d6c                _Unwind_GetIP
+                0x40223d74                _Unwind_GetIPInfo
+                0x40223d84                _Unwind_SetIP
+                0x40223d8c                _Unwind_GetLanguageSpecificData
+                0x40223d94                _Unwind_GetRegionStart
+                0x40223d9c                _Unwind_FindEnclosingFunction
+                0x40223db8                _Unwind_GetDataRelBase
+                0x40223dc0                _Unwind_GetTextRelBase
+                0x40223dc8                __frame_state_for
+                0x40223e7c                _Unwind_RaiseException
+                0x40223f68                _Unwind_ForcedUnwind
+                0x40223ff0                _Unwind_Resume
+                0x4022407c                _Unwind_Resume_or_Rethrow
+                0x40224108                _Unwind_DeleteException
+                0x40224120                _Unwind_Backtrace
+ *fill*         0x40224193        0x0 
+ *libgcc.a:unwind-dw2-fde.*(.literal .literal.* .text .text.*)
+ *fill*         0x40224193        0x1 
+ .text          0x40224194      0xe71 C:/esp/ESP8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2-fde.o)
+                                0xe79 (size before relaxing)
+                0x40224d84                __register_frame_info_bases
+                0x40224da4                __register_frame_info
+                0x40224dc8                __register_frame
+                0x40224e04                __register_frame_info_table_bases
+                0x40224e20                __register_frame_info_table
+                0x40224e3c                __register_frame_table
+                0x40224e70                __deregister_frame_info_bases
+                0x40224f00                __deregister_frame_info
+                0x40224f10                __deregister_frame
+                0x40224f2c                _Unwind_Find_FDE
+ *fill*         0x40225005        0x0 
  *(.irom0.literal .irom0.text)
  *(.irom.literal .irom.text .irom.text.literal)
  *(.text2 .text2.* .literal2 .literal2.*)
- *fill*         0x40225007        0x1 
+ *fill*         0x40225005        0x3 
  .text2.45      0x40225008      0x289 C:/esp/ESP8266_RTOS_SDK/components/esp8266/lib\libphy.a(phy_chip_v5_ana_romfunc.o)
                                 0x291 (size before relaxing)
                 0x40225018                rom_set_channel_freq
@@ -24014,7 +24014,7 @@ END GROUP
  .rodata.prvProcessReceivedCommands
                 0x4022e080       0x28 C:/esp/Lab1_816010815/hello_world/build/freertos\libfreertos.a(timers.o)
  .rodata.app_main.str1.4
-                0x4022e0a8       0xcc C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+                0x4022e0a8       0xcc C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
  .rodata.esp_newlib_init.str1.4
                 0x4022e174       0x10 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(reent_init.o)
                                  0x12 (size before relaxing)
@@ -24661,7 +24661,7 @@ OUTPUT(C:/esp/Lab1_816010815/hello_world/build/hello-world.elf elf32-xtensa-le)
  .debug_frame   0x00001b10       0xfc C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_caps.o)
  .debug_frame   0x00001c0c       0x40 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_init.o)
  .debug_frame   0x00001c4c       0xc8 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
- .debug_frame   0x00001d14       0x30 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+ .debug_frame   0x00001d14       0x30 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
  .debug_frame   0x00001d44       0xb0 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
  .debug_frame   0x00001df4      0x1e0 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(locks.o)
  .debug_frame   0x00001fd4       0x88 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(reent_init.o)
@@ -24781,7 +24781,7 @@ OUTPUT(C:/esp/Lab1_816010815/hello_world/build/hello-world.elf elf32-xtensa-le)
  .debug_info    0x0001acc5     0x19f0 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_caps.o)
  .debug_info    0x0001c6b5      0xa74 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_init.o)
  .debug_info    0x0001d129     0x1758 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
- .debug_info    0x0001e881     0x133e C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+ .debug_info    0x0001e881     0x133e C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
  .debug_info    0x0001fbbf     0x136b C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
  .debug_info    0x00020f2a     0x1826 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(locks.o)
  .debug_info    0x00022750     0x14ee C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(reent_init.o)
@@ -24906,7 +24906,7 @@ OUTPUT(C:/esp/Lab1_816010815/hello_world/build/hello-world.elf elf32-xtensa-le)
  .debug_abbrev  0x000030d0      0x478 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_caps.o)
  .debug_abbrev  0x00003548      0x202 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_init.o)
  .debug_abbrev  0x0000374a      0x3d1 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
- .debug_abbrev  0x00003b1b      0x24f C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+ .debug_abbrev  0x00003b1b      0x24f C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
  .debug_abbrev  0x00003d6a      0x223 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
  .debug_abbrev  0x00003f8d      0x2a0 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(locks.o)
  .debug_abbrev  0x0000422d      0x2b9 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(reent_init.o)
@@ -25028,7 +25028,7 @@ OUTPUT(C:/esp/Lab1_816010815/hello_world/build/hello-world.elf elf32-xtensa-le)
  .debug_loc     0x000071a7      0xd1e C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_caps.o)
  .debug_loc     0x00007ec5       0x8e C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_init.o)
  .debug_loc     0x00007f53      0x342 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
- .debug_loc     0x00008295       0x23 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+ .debug_loc     0x00008295       0x23 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
  .debug_loc     0x000082b8      0x16c C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
  .debug_loc     0x00008424      0x3e3 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(locks.o)
  .debug_loc     0x00008807      0x1b8 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(reent_init.o)
@@ -25171,7 +25171,7 @@ OUTPUT(C:/esp/Lab1_816010815/hello_world/build/hello-world.elf elf32-xtensa-le)
  .debug_aranges
                 0x00000a00       0x40 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
  .debug_aranges
-                0x00000a40       0x20 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+                0x00000a40       0x20 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
  .debug_aranges
                 0x00000a60       0x40 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
  .debug_aranges
@@ -25395,7 +25395,7 @@ OUTPUT(C:/esp/Lab1_816010815/hello_world/build/hello-world.elf elf32-xtensa-le)
  .debug_ranges  0x000008d0       0xd0 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_caps.o)
  .debug_ranges  0x000009a0       0x18 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_init.o)
  .debug_ranges  0x000009b8       0x30 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
- .debug_ranges  0x000009e8       0x10 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+ .debug_ranges  0x000009e8       0x10 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
  .debug_ranges  0x000009f8       0x30 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
  .debug_ranges  0x00000a28       0x78 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(locks.o)
  .debug_ranges  0x00000aa0       0x58 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(reent_init.o)
@@ -25515,7 +25515,7 @@ OUTPUT(C:/esp/Lab1_816010815/hello_world/build/hello-world.elf elf32-xtensa-le)
  .debug_line    0x000113a3     0x150b C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_caps.o)
  .debug_line    0x000128ae      0x3c2 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_init.o)
  .debug_line    0x00012c70      0x9ed C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
- .debug_line    0x0001365d      0x5ad C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+ .debug_line    0x0001365d      0x5ad C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
  .debug_line    0x00013c0a      0x51d C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
  .debug_line    0x00014127      0xa74 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(locks.o)
  .debug_line    0x00014b9b      0xa0e C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(reent_init.o)
@@ -25662,7 +25662,7 @@ OUTPUT(C:/esp/Lab1_816010815/hello_world/build/hello-world.elf elf32-xtensa-le)
                                 0x694 (size before relaxing)
  .debug_str     0x000053fd      0x15f C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
                                0x1339 (size before relaxing)
- .debug_str     0x0000555c       0xac C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+ .debug_str     0x0000555c       0xac C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
                                0x11f2 (size before relaxing)
  .debug_str     0x00005608       0x72 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
                                0x119a (size before relaxing)
@@ -25931,7 +25931,7 @@ OUTPUT(C:/esp/Lab1_816010815/hello_world/build/hello-world.elf elf32-xtensa-le)
  .comment       0x0000006b       0x32 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_caps.o)
  .comment       0x0000006b       0x32 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_init.o)
  .comment       0x0000006b       0x32 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
- .comment       0x0000006b       0x32 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+ .comment       0x0000006b       0x32 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
  .comment       0x0000006b       0x32 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
  .comment       0x0000006b       0x32 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(locks.o)
  .comment       0x0000006b       0x32 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(reent_init.o)
@@ -26109,7 +26109,7 @@ OUTPUT(C:/esp/Lab1_816010815/hello_world/build/hello-world.elf elf32-xtensa-le)
  .xtensa.info   0x00000038        0x0 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_caps.o)
  .xtensa.info   0x00000038        0x0 C:/esp/Lab1_816010815/hello_world/build/heap\libheap.a(esp_heap_init.o)
  .xtensa.info   0x00000038        0x0 C:/esp/Lab1_816010815/hello_world/build/log\liblog.a(log.o)
- .xtensa.info   0x00000038        0x0 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(hello_world_main.o)
+ .xtensa.info   0x00000038        0x0 C:/esp/Lab1_816010815/hello_world/build/main\libmain.a(lab_q1_816010815.o)
  .xtensa.info   0x00000038        0x0 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
  .xtensa.info   0x00000038        0x0 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(locks.o)
  .xtensa.info   0x00000038        0x0 C:/esp/Lab1_816010815/hello_world/build/newlib\libnewlib.a(reent_init.o)
